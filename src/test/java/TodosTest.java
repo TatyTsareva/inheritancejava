@@ -26,6 +26,7 @@ class TodosTest {
         Task[] actual = todos.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testWhenFewProblemsFound() {
         SimpleTask simpleTask = new SimpleTask(5, "Купить Хлеб");
@@ -50,6 +51,7 @@ class TodosTest {
         Task[] actual = todos.search("Хлеб");
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testWhenZeroFewProblemsFound() {
         SimpleTask simpleTask = new SimpleTask(5, "Купить Хлеб");
@@ -74,6 +76,7 @@ class TodosTest {
         Task[] actual = todos.search("вторник");
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testWhenOneFewProblemsFound() {
         SimpleTask simpleTask = new SimpleTask(5, "Купить Хлеб");

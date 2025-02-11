@@ -1,5 +1,5 @@
 public class Epic extends Task {
-     private String [] subtasks;
+    private String[] subtasks;
 
     public Epic(int id, String[] subtasks) {
         super(id);
@@ -13,7 +13,7 @@ public class Epic extends Task {
     @Override
     public boolean matches(String query) {
         for (String subtask : subtasks) {
-            if (subtask.contains(query)){
+            if (subtask.contains(query)) {
                 return true;
             }
         }
